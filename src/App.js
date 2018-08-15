@@ -3,13 +3,23 @@ import './App.css';
 import CryptoInfo from './CryptoInfo';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Crypto currencies</h1>
-        </header>
-        <CryptoInfo name={this.props.name} price={this.props.price} />
+      <h1>Crypto Currencies</h1>
+      <table>
+        <tbody>
+          <tr>
+            <th>Icon</th>
+            <th className='currencyName'>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th className='hourlyChange'>Change Last HR</th>
+            <th className='dailyChange'>Change Last 24HR</th>
+          </tr>
+          <CryptoInfo />
+        </tbody>
+      </table>
       </div>
     );
   }
