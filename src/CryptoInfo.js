@@ -11,7 +11,7 @@ class CryptoInfo extends Component {
 
     componentDidMount () {
         setInterval (() => {
-            const _url = "https://api.coinmarketcap.com/v2/ticker/?limit=40";
+            const _url = "https://api.coinmarketcap.com/v2/ticker/?limit=200";
             fetch(_url).then(resp => resp.json()).then(cryptoData => {
             this.setState({coins: Object.values(cryptoData.data)
             })

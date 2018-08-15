@@ -5,7 +5,7 @@ import CryptoInfo from './CryptoInfo';
 class App extends Component {
   render () {
     return (
-      <div className="App">
+      <section className="App">
       <h1>Crypto Currencies</h1>
       <table>
         <tbody>
@@ -20,7 +20,7 @@ class App extends Component {
           <CryptoInfo />
         </tbody>
       </table>
-      </div>
+      </section>
     );
   }
 }
