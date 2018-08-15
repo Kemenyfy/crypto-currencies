@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import CryptoInfo from './CryptoInfo'
+import CryptoInfo from './CryptoInfo';
 
 class App extends Component {
   render() {

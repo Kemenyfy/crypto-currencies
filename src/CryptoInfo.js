@@ -12,17 +12,17 @@ class CryptoInfo extends Component {
         setInterval(() => {
             const _url = "https://api.coinmarketcap.com/v2/ticker/?limit=20";
             fetch(_url).then(resp => resp.json()).then(cryptoData => {
-                console.log(cryptoData.data);
                 this.setState({coins: cryptoData.data[1].quotes.USD.price });
                 const coins = Object.values(cryptoData.data)
+                console.log(coins);
             }); 
-        }, 1000);
+        }, 10000);
     }
 
     render() {
         return (
             <div>
-                The price is {this.state.coins}
+                The price is {this.state.price}
             </div>
         );        
     }    
