@@ -6,7 +6,8 @@ class App extends Component {
   render () {
     return (
       <section className="App">
-      <h1>Crypto Currencies</h1>
+      <div className="App-Title-1">Crypto Currency Tracker</div>
+      <div className="App-Title-2">Created by Somebody/Somehow/Maybe</div>
       <table>
         <tbody>
           <tr>
@@ -14,8 +15,8 @@ class App extends Component {
             <th className='currencyName'>Name</th>
             <th>Symbol</th>
             <th>Price</th>
-            <th className='hourlyChange'>Change Last HR</th>
-            <th className='dailyChange'>Change Last 24HR</th>
+            <th className='hourlyChange'>% Change (1hr)</th>
+            <th className='dailyChange'>% Change (24h)</th>
           </tr>
           <CryptoInfo />
         </tbody>

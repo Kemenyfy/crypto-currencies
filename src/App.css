@@ -1,8 +1,18 @@
 .App {
   text-align: center;
-  background: white;
-  margin-bottom: 2em;
-  border-radius: 4px;
+  background: rgb(69, 133, 206);
+}
+
+.App-Title-1 {
+  font-size: 1.5em;
+  padding: .5em;
+  color: white;
+}
+
+.App-Title-2 {
+  font-size: .7em;
+  margin-bottom: 1em;
+  color: white;
 }
 
 table {
@@ -12,20 +22,19 @@ table {
 
 th {
   border-radius: 4px;
-  font-size: 18px;
+  font-size: .5em;
   padding: 6px;
-  background: rgb(86, 95, 223);
+  background: rgb(37, 103, 179);
   color: white;
   
 
 }
 
 td {
-  border: 1px solid #6EB4D0;
-  font-size: 12px;
-  background: rgb(170, 181, 252);
+  font-size: .6em;
+  background: white;
   color: black;
-  padding: 6px 0px 6px 0px;
+  padding: .5em;
 }
 
 hourlyChange,
@@ -38,6 +47,6 @@ hourlyChange,
 }
 
 h1 {
-  color: rgb(17, 45, 167);
+  color: white;
   padding-top: 1em;
 }

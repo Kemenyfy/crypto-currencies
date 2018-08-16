@@ -17,7 +17,7 @@ class CryptoInfo extends Component {
             })
             console.log(cryptoData.data)
             }) 
-        }, 10000)
+        }, 1000)
     }
 
     render () {
